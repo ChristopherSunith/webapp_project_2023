@@ -1,0 +1,10 @@
+{% extends 'mainbanking/primary/base.html' %}
+
+{% block content %}
+    <h1>Bank Details</h1>
+    <ul>
+        {% for bank in banks %}
+            <li>{{ bank.name }} - {{ bank.location }} - {{ bank.contact }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
